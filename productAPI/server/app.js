@@ -11,6 +11,8 @@ app.use(bp.urlencoded({extended: false}))
 
 // create product
 require("./routes/productCreate")(app);
+// view product
+require("./routes/productRead")(app);
 
 
 app.listen(port, () => {
